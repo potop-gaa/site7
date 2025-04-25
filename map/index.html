@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="zone-selector">
+        <button class="zone-btn active" data-zone="lcz">Лёгкая зона (LCZ)</button>
+        <button class="zone-btn" data-zone="hcz">Тяжёлая зона (HCZ)</button>
+        <button class="zone-btn" data-zone="office">Офисная зона</button>
+    </div>
+    <div id="info">Зажмите ЛКМ для вращения<br>Колёсико мыши для масштабирования</div>
+    <div id="tooltip" class="tooltip"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/FontLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/geometries/TextGeometry.js"></script>
+    
+    <script src="config.js"></script>
+    <script src="core.js"></script>
+    <script src="zones/lcz.js"></script>
+    <script src="zones/hcz.js"></script>
+    <script src="zones/office.js"></script>
+    <script src="ui.js"></script>
+</body>
+</html>
